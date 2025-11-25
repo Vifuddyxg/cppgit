@@ -6,7 +6,8 @@ using namespace std;
 
 void terminal(){
 
-cout<< "hello";
+cout<< "username@hostname ~ $ ";
+
 
 
 }
