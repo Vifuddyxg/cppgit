@@ -36,9 +36,9 @@ void vim(int nr){
 void sintax(){
 int verificarevim = 0;
   if(prox == "vim"){
-    for(int i = 0;i < size(nuvim);i++){
+    for(int i = 0;i < nuvim.size();i++){
       if(proy == nuvim[i]){verificarevim = 1; vim(i);}}  
-  if(verificarevim == 0){nuvim.push_back(proy);invim.push_back("");cout<<invim.back()<<endl;nrmagic = size(invim) - 1;vim(nrmagic);}
+  if(verificarevim == 0){nuvim.push_back(proy);invim.push_back("");cout<<invim.back()<<endl;nrmagic = invim.size() - 1;vim(nrmagic);}
   }
 }
 
@@ -61,3 +61,4 @@ int main(){
 
   return 0;
 }
+    
